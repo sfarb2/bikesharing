@@ -61,8 +61,8 @@ However, upon review the criteria stood alone as simply "criteria" (e.g. "<1000"
   
   ![Gender Breakdown](/gender_breakdown.png)
   
-  ![Trips By Gender (Weekday Per Hour)](/trips_by_gender_(weekday_per_hour.png)
+  ![Trips By Gender (Weekday Per Hour)](/trips_by_gender_(weekday_per_hour).png)
   
   ![Trips By Weekday Per Hour](/trips_by_weekday_per_hour.png)
   
-  ![User Trips By Gender (By Weekday)](/user_trips_by_gender_(by_weekday.png)
+  ![User Trips By Gender (By Weekday)](/user_trips_by_gender_(by_weekday).png)
