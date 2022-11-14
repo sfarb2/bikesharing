@@ -1,4 +1,4 @@
-# Bike Sharing in Des Moines
+# Bikeshare in Des Moines
 
 ## Overview of Project
 
@@ -34,9 +34,10 @@ The purpose of this project is to use a snapshot of bikeshare data in NYC (speci
   ![User Trips By Gender (By Weekday)](/user_trips_by_gender_(by_weekday).png)
   
   Male subscribers relied heavily on bikes most days of the week, but Mondays, Tuesdays, Thursdays, and Fridays were particularly popular.
+
 [Link to dashboard](https://public.tableau.com/app/profile/sam.farber/viz/Module14Challenge_16683737416810/Story1?publish=yes)
 
 ## Summary
-In our sample data set from August 2019, the vast majority of users were males and those users more frequently subscribed to the bike share program rather than paying 
-
-Additional visualizations recommended (temperature, precipitation, Des Moines demographics, urban density, customers vs subscriber by gender)
+In our sample data set from August 2019, the vast majority of users were males and those users more frequently subscribed to the bikeshare program rather than paying on a short-term or ad hoc basis. In order to get a fuller picture of whether starting a bikeshare business in Des Moines makes sense, there is some additional information we should examine from New York.
+- First, it would be important to look at another month's worth of data, particularly during the winter. While we know that August weather should generally be conducive to biking, winter in New York/Des Moines both see bitter cold and snow that would discourage bike riding.
+- Also, comparing the urban density of Des Moines to New York could be informative. NYC is obviously extremely dense so many people could use bikes as a mode of transportation to cover a short distance. It merits investigation to see whether Des Moines' density is comparable (albeit on a much smaller scale) to ensure that potential attractions/conveniences are within biking distance of residential areas.
