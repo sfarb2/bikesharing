@@ -3,66 +3,40 @@
 ## Overview of Project
 
 ### Purpose
-The purpose of this project was to increase familiarity and skill with Microsoft Excel. By testing a variety of methods including calculation formulas, lookups, and pivot tables, we internalized how to search across data sets within a single workbook and turn the resulting information into actionable analyses.
-
-## Analysis and Challenges
-I performed my analysis in two distinctly different fashions:
- - Assessing outcomes by launch date was primarily pivot table manipulation
- - Assessing outcomes by goal was driven by formulaic calculations
-
-### Analysis of Outcomes Based on Launch Date
-The launch date outcome analysis relied on creating a pivot table. After creating the "YEAR" column as instructed, the pivot table setup was relatively straightforward:
-
-![Pivot Table](/Pivot_table_example.png)
-
-### Analysis of Outcomes Based on Goals
-On the other hand, our goal-based outcome analysis eschewed pivot tables for formulas. 
-
-![Table from Formulas](/Countifs_example.png)
-
-Throughout that sheet, most of the formulas were some variation of:
-```
-=COUNTIFS(Kickstarter!$F:$F,"successful",Kickstarter!$D:$D,"<1000",Kickstarter!$R:$R,"plays")
-
-=SUM(B2:D2)
-
-=B2/E2*100
-```
-
-### Challenges and Difficulties Encountered
-The biggest challenge I encountered was refreshing my memory on the syntax for COUNTIFS. Since Excel is generally object based, I assumed that the criteria for each range would need to be formatted as:
-```
-Cell_Coordinates = Criteria
-```
-However, upon review the criteria stood alone as simply "criteria" (e.g. "<1000").
+The purpose of this project is to use a snapshot of bikeshare data in NYC (specifically August 2019) and run analyses on it/produce visualizations off of it that will help us decide whether a bikeshare business would make sense for Des Moines.
 
 ## Results
 
-- What are two conclusions you can draw about the Outcomes based on Launch Date?
-  1. May and June seem to be the best months to launch a theater campaign. Though failures peaked in May as well, their increase there paled in comparison to the number of successful fundraising efforts.
-  2. October and December returned the lowest rates of success; December was the only month in which less than half of campaigns were successful.
-- What can you conclude about the Outcomes based on Goals?
-  1. Not surprisingly, lower goals were reached more often their more-expensive counterparts. 
-  2. Groups of campaigns seeking less than 20,000 were more likely to succeed than fail, and there was a striking level of success across the range spanning 35,000-44,999. In any other group, a campaign was more likely to fail than succeed.
-- What are some limitations of this dataset?
-  1. We don't know the results of the live campaigns which could affect the data one way or the other (it may less than 2% of all campaigns but the impact could be more significant at the month or goal level).
-  2. Theater campaigns were undertaken in nearly 20 different countries so unless we are to assume that the currency values have all been standardized (presumably to American dollars), we might be misrepresenting some of monetary values.
-- What are some other possible tables and/or graphs that we could create?
-  * Though a line graph seems like the clear choice for evaluating outcomes by launch date (as it generally would for most cases in which the x-axis represents chronological time), it's possible that a bar chart or histogram would have been a more valuable visual representation of outcomes based on goal.
-  
-  ![Potential Bar Chart](/Potential_bar_chart_2.png)
-  
+  ![Checkout Times For Users](/checkout_times_for_users.png)
+
+  The vast majority of rides are less than an hour long, and a majority of those last 20 minutes or fewer.
   
   ![Checkout Times By Gender](/checkout_times_by_gender.png)
   
-  ![Checkout Times For Users](/checkout_times_for_users.png)
-  
-  ![Customers](/customers.png)
-  
+  The breakdown of trip duration looks similar across genders, though when the gender is unknown, the duration of rides is more evenly distributed across the first ~30 minutes.
+
   ![Gender Breakdown](/gender_breakdown.png)
+
+  Men were responsible for about two-thirds of all City Bike usage in NYC during August 2019.
+   
+  ![Trips By Weekday Per Hour](/trips_by_weekday_per_hour.png)
+  
+  On weekdays, the heaviest windows of usage windows occur during commuting hours (7-9am, 5-6pm). On weekends, usage is highest in the middle of the day (10am-6pm).
   
   ![Trips By Gender (Weekday Per Hour)](/trips_by_gender_(weekday_per_hour).png)
   
-  ![Trips By Weekday Per Hour](/trips_by_weekday_per_hour.png)
+  When broken down by gender, similar usage window trends are exhibited.
+  
+  ![User Breakdown](/customers.png)
+  
+  A supermajority of New York riders were annual subscribers as opposed to short-term customers.
   
   ![User Trips By Gender (By Weekday)](/user_trips_by_gender_(by_weekday).png)
+  
+  Male subscribers relied heavily on bikes most days of the week, but Mondays, Tuesdays, Thursdays, and Fridays were particularly popular.
+[Link to dashboard](https://public.tableau.com/app/profile/sam.farber/viz/Module14Challenge_16683737416810/Story1?publish=yes)
+
+## Summary
+In our sample data set from August 2019, the vast majority of users were males and those users more frequently subscribed to the bike share program rather than paying 
+
+Additional visualizations recommended (temperature, precipitation, Des Moines demographics, urban density, customers vs subscriber by gender)
